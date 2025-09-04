@@ -1,159 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Joshua Prickett | Director-Level Engineering & Software Leader</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Director-level engineering & software leader portfolio and resume for Joshua Prickett, D.C.S." />
   <style>
+    :root {
+      --ink:#2c3e50;
+      --ink-2:#34495e;
+      --text:#333;
+      --bg:#fff;
+      --rule:#e8e8e8;
+      --link:#1e6fdd;
+    }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
       line-height: 1.6;
-      color: #333;
+      color: var(--text);
+      background: var(--bg);
     }
     header {
-      background: #2c3e50;
+      background: var(--ink);
       color: #fff;
-      padding: 20px;
+      padding: 24px 16px;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
+    header h1 { margin: 0 0 6px 0; font-size: 28px; }
+    header .strap { margin: 0; font-weight: 600; }
+    header .contact {
+      margin-top: 10px;
+      font-size: 14px;
     }
-    header p {
-      margin: 5px 0 0;
-    }
+    header a { color:#ecf0f1; text-decoration: none; }
+    header a:hover { text-decoration: underline; }
+
+    /* Top nav */
     nav {
-      background: #34495e;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      position: sticky; top: 0; z-index: 10;
+      background: var(--ink-2);
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 2px;
+      border-bottom: 1px solid #22303b;
     }
     nav a {
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 15px;
-      display: block;
+      color: #fff; text-decoration: none;
+      padding: 10px 12px; display: block; font-size: 14px;
     }
-    nav a:hover {
-      background: #2c3e50;
-    }
+    nav a:hover { background: var(--ink); }
+
     main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 1000px;
+      margin: 36px auto;
+      padding: 0 20px 60px;
     }
-    .section {
-      margin-bottom: 2.5em;
+    .section { margin-bottom: 36px; }
+    .section h2 {
+      color: var(--ink);
+      border-bottom: 2px solid var(--rule);
+      padding-bottom: 6px;
+      margin-top: 0;
     }
-    h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
+    .lead { white-space: pre-wrap; }
+    ul { margin-top: 10px; }
+    li { margin: 6px 0; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .back-top {
+      margin-top: 14px;
+      display: inline-block;
+      font-size: 14px;
     }
-    ul {
-      margin-top: 0.5em;
-    }
-    .contact {
-      font-size: 0.9em;
+    .back-top a { text-decoration: none; color: var(--link); }
+    .back-top a:hover { text-decoration: underline; }
+    .muted { color:#666; }
+
+    /* Small-screen tweaks */
+    @media (max-width: 520px) {
+      header h1 { font-size: 22px; }
+      nav a { font-size: 13px; padding: 9px 10px; }
+      main { padding: 0 14px 52px; }
     }
   </style>
 </head>
 <body>
+  <a id="top"></a>
   <header>
-    <h1>Joshua Prickett, D.C.S.</h1>
-    <p><strong>Director-Level Engineering & Software Leader | Cross-Industry Ops | Data & Compliance Systems</strong></p>
+    <h1>JOSHUA PRICKETT, D.C.S.</h1>
+    <p class="strap">Director-Level Engineering &amp; Software Leader | Cross-Industry Ops | Data &amp; Compliance Systems</p>
     <p class="contact">
-      Beaumont, CA | 951-400-2484 | 
-      <a href="mailto:DrJoshuaPrickett@gmail.com" style="color:#ecf0f1;">DrJoshuaPrickett@gmail.com</a><br>
-      <a href="https://linkedin.com/in/dr-joshua-prickett" style="color:#ecf0f1;">LinkedIn</a> | 
-      <a href="https://github.com/DrJoshuaPrickett" style="color:#ecf0f1;">GitHub</a>
+      Beaumont, CA |
+      <a href="tel:+19514002484">951-400-2484</a> |
+      <a href="mailto:DrJoshuaPrickett@gmail.com">DrJoshuaPrickett@gmail.com</a> |
+      <a href="https://linkedin.com/in/dr-joshua-prickett">linkedin.com/in/dr-joshua-prickett</a>
     </p>
   </header>
 
-  <nav>
-    <a href="#summary">Summary</a>
+  <nav aria-label="Quick links">
+    <a href="#summary">Executive Summary</a>
     <a href="#snapshot">Executive Snapshot</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#experience">Experience</a>
+    <a href="#achievements">Signature Achievements</a>
+    <a href="#experience">Professional Experience</a>
+    <a href="#additional">Additional Experience</a>
     <a href="#education">Education</a>
-    <a href="#additional">Additional</a>
-    <a href="#presentations">Presentations</a>
-    <a href="#skills">Skills</a>
+    <a href="#presentations">Selected Presentations</a>
+    <a href="#skills">Regulatory &amp; Technical Skills</a>
   </nav>
 
   <main>
-    <div class="section" id="summary">
-      <h2>Executive Summary</h2>
-      <p>Director and systems architect for instrument software. I’ve built and led multiple teams across the US and EU to deliver embedded and application-layer software for diagnostic platforms... Results include decision loops cut to &lt;2 minutes across global sites, queues reduced up to 25%, and $10M+ in supplier savings via contract renegotiations. I’m excited to bring this operating model to Abbott’s Infectious Diseases business and raise quality, speed, and confidence in every next-gen instrument we put in the field.</p>
-    </div>
+    <section class="section" id="summary">
+      <h2>EXECUTIVE SUMMARY</h2>
+      <p class="lead">Director and systems architect for instrument software. I’ve built and led multiple teams across the US and EU to deliver embedded and application-layer software for diagnostic platforms, partnering closely with R&amp;D, QA/RA, Operations, Finance, Yield Analysis, and Hardware teams to ensure releases land on time and audit-ready. My background spans 20+ years of software development and data science in regulated, safety-critical environments with hands-on work in instrument control, sensor I/O, calibration, and digital-thread/eDHR traceability. This experience translates directly to IVD-class instruments. I set the platform architecture runway, own portfolio roadmaps and release trains, and drive cross-site execution through clear governance (cadence, dependencies, risk/issue management) while developing senior talent and a healthy succession bench. Results include decision loops cut to &lt;2 minutes across global sites, queues reduced up to 25%, and $10M+ in supplier savings via contract renegotiations. I’m excited to bring this operating model to Abbott’s Infectious Diseases business and raise quality, speed, and confidence in every next-gen instrument we put in the field.</p>
+      <span class="back-top"><a href="#top">Back to top ↑</a></span>
+    </section>
 
-    <div class="section" id="snapshot">
-      <h2>Executive Snapshot</h2>
+    <section class="section" id="snapshot">
+      <h2>EXECUTIVE SNAPSHOT</h2>
       <ul>
-        <li><strong>$10M+ supplier wins:</strong> Introduced part-level scrap genealogy tied to supplier defects...</li>
-        <li><strong>Portfolio Shaping & Demand Management:</strong> Centralized intake across global users...</li>
-        <li><strong>Program Leadership & Strategy:</strong> Directed a $40M+ multi-site AI/ML portfolio...</li>
-        <li><strong>Accounting integrity & MES remediation:</strong> Closed $500M+ loss accounting gap...</li>
-        <li><strong>Global control & telemetry:</strong> Cut global lot status lookups from 10–15 minutes to &lt;2 minutes...</li>
-        <li><strong>Predictive stability & early detection:</strong> Reduced cycle time variability by ~38%...</li>
-        <li><strong>Cross-Functional Alignment:</strong> Partnered with engineers, researchers, PMs...</li>
-        <li><strong>Mentorship & Talent Development:</strong> Managed managers and mentored 50+ engineers...</li>
+        <li><strong>$10M+ supplier wins:</strong> Introduced part-level scrap genealogy tied to supplier defects. The findings drove contract renegotiations and ongoing vendor quality enforcement.</li>
+        <li><strong>Portfolio Shaping &amp; Demand Management:</strong> Operated a centralized intake across hundreds of global users from manufacturing, automation, quality and reliability, supply chain, and IT. Normalized and themed requests into a single prioritized portfolio, prioritized by ROI/effort, and converted them into a clear backlog of model/feature epics with quarterly OKRs and transparent commit/kill decisions. Through quarterly reviews with senior executives, produced recommendation lists for sequencing funding and delivery each quarter.</li>
+        <li><strong>Program Leadership &amp; Strategy:</strong> Directed a $40M+ multi-site AI/ML portfolio spanning distributed systems, analytics, and automation. Drove GenAI-aligned roadmaps and cross-org execution.</li>
+        <li><strong>Accounting integrity &amp; MES remediation:</strong> Discovered improper MES workflows causing a $500M+ loss accounting gap across newly implemented manufacturing technologies over two quarters. Instituted audits and spearheaded a cross-functional team (Automation, Finance, Yield, Quality/Reliability) to drive a remediation roadmap and quickly close gaps to prevent recurrence.</li>
+        <li><strong>Global control &amp; telemetry:</strong> Cut global lot status lookups from 10–15 minutes/site to &lt;2 minutes. This enabled remote orchestration, audit-ready visibility, accelerated incident response, and compliance evidence gathering.</li>
+        <li><strong>Predictive stability &amp; early detection:</strong> Reduced cycle time variability by ~38% and prevented thousands of defective units annually via ML-assisted controls.</li>
+        <li><strong>Cross-Functional Alignment:</strong> Partnered with software engineers, AI researchers, and product managers to synchronize technical capabilities with business objectives. Influenced enterprise re-architecture that avoided 5,000+ engineering hours.</li>
+        <li><strong>Mentorship &amp; Talent Development:</strong> Managed managers and senior engineers while mentoring 50+ engineers across data, software, and DevOps into senior roles. Sustained 100% team retention through inclusive leadership practices.</li>
       </ul>
-    </div>
+      <span class="back-top"><a href="#top">Back to top ↑</a></span>
+    </section>
 
-    <div class="section" id="achievements">
-      <h2>Signature Achievements</h2>
+    <section class="section" id="achievements">
+      <h2>SIGNATURE ACHIEVEMENTS</h2>
       <ul>
-        <li><strong>Supplier accountability:</strong> Turned vendor specs into enforceable contracts... $10M+ savings.</li>
-        <li><strong>Product Prioritization Framework:</strong> Built cross-site model aggregator... called “the biggest transformation in prioritization logic in the last two decades.”</li>
-        <li><strong>Predictive quality at scale:</strong> Operationalized 50+ ML systems with audit-ready persistence...</li>
-        <li><strong>Global architecture & hardware requirements:</strong> Led reference architectures across sites.</li>
-        <li><strong>VF-wide standards & adoption:</strong> Line Yield metrics, reusable analytics, upskilled 200+ analysts.</li>
+        <li><strong>Supplier accountability &amp; margin protection:</strong> Turned vendor contractual performance specifications into enforceable contracts by tying part-level defects and uptime directly to vendor-quoted limits. Hard evidence powered $10M+ savings through contract renegotiations and monthly reviews that tracked root cause, owner, fix status, and effectiveness, shifting supplier management from reactive audits to continuous, data-driven accountability. For the MedTech field, this becomes real-time vendor scorecards (defect density by severity, time to fix SLAs, validated change control, SBOM/CVE hygiene) that make compliance a byproduct of doing the right thing.</li>
+        <li><strong>Product Prioritization Framework (Agentic AI/ML Integration, first of its kind):</strong> Built the cross-site Product Prioritization Framework with a C# weighted model aggregator (Final Agent Publisher/Injector) that unified 50+ input models under governed limits. Four priority categories enabled nuanced but consistent scheduling; executives/managers could cap/disable models, rendering the previous linear model obsolete. Disparate model inputs ran in shadow-mode with full explainability before promotion. Result: queue times reduced up to 25%, utilization up ~15%, synchronized shipment for disaggregated product sets. A senior executive called it “the biggest transformation in prioritization logic in the last two decades.”</li>
+        <li><strong>Predictive quality at scale for post-market surveillance:</strong> Operationalized 50+ ML systems with shadow mode staging, weekly threshold tuning, and audit-ready persistence of every decision/KPI. In fabs, this caught excursions early and reduced variability/scrap. In the MedTech field, the same pattern becomes constraint-aware post-market surveillance that surfaces safety-relevant anomalies first and shortens complaint classification cycles by 15–50%.</li>
+        <li><strong>Global architecture &amp; hardware requirements:</strong> Led reference architectures and hardware requirement baselines across global sites (compute, storage, networking), grounded in capacity white paper research across industries. Drove design reviews and conformance gates so software, data pipelines, and instrument hardware shipped as one unified system across sites.</li>
+        <li><strong>VF wide standards &amp; adoption:</strong> Drove Line Yield metrics, reusable analytics components, and up to ~500 wafer production starts improvements for constrained toolsets across operations. Enabled the upskilling of 200+ data analysts.</li>
       </ul>
-    </div>
+      <span class="back-top"><a href="#top">Back to top ↑</a></span>
+    </section>
 
-    <div class="section" id="experience">
-      <h2>Professional Experience</h2>
-      <h3>Intel Corporation | 1998 – 2025 | Global</h3>
-      <p><em>Director-level and senior roles across Data Science, Manufacturing Engineering, R&D DSS.</em></p>
+    <section class="section" id="experience">
+      <h2>PROFESSIONAL EXPERIENCE</h2>
+      <p><strong>Intel Corporation | 1998 – 2025 | Global</strong><br />
+      <span class="muted">Selected leadership roles (20 years): Data Science/Manufacturing Engineering Director | Senior R&amp;D Decision Support Systems (DSS) Manager | Data Center/Central Systems DSS Manager</span></p>
       <ul>
-        <li><strong>Agentic AI with guardrails:</strong> Designed prioritization logic with explainable UI and CAPA mapping.</li>
-        <li><strong>Virtual Factory orchestration:</strong> Reduced cross-site latency to &lt;2 minutes.</li>
-        <li><strong>Executive communication:</strong> Shaped portfolio funding for $40M+ program set.</li>
-        <li><strong>Architecture governance:</strong> Defined reference architectures and baselines.</li>
-        <li><strong>SQL/.NET reporting:</strong> Delivered real-time algorithmic views for executives.</li>
+        <li><strong>Cross-functional orchestration:</strong> Partnered daily with Product, Quality/RA, Manufacturing, Hardware, Cybersecurity, and Service Engineering to align requirements and risks into unified, compliant releases.</li>
+        <li><strong>Agentic AI with guardrails (prioritization/CAPA):</strong> Designed a C# Final Agent Publisher/Injector that unified 50+ models with dynamic weights and four priority categories. Added executive controls (caps/disable), separation of duties, shadow-mode staging, and an explainable UI that traced each decision to its inputs. Pattern directly maps to complaint/CAPA triage, safety-first routing, governed limits, audit-ready evidence, and faster, more consistent outcomes.</li>
+        <li><strong>Virtual Factory orchestration:</strong> Reduced cross-site status latency from 10–15 minutes per site to &lt;2 minutes per site, significantly improving synchronized deliveries and evidence collection for audits.</li>
+        <li><strong>Executive communication:</strong> Presented consolidated roadmaps and trade-off analyses to VP/SVP leadership quarterly, which shaped portfolio funding and quarterly release trains for a $40M+ program set.</li>
+        <li><strong>Architecture governance &amp; hardware requirements:</strong> Defined global reference architectures and site hardware baselines informed by capacity white paper research (power/cooling/networking headroom, sensor I/O). Established conformance gates and bill of materials controls so software and instrument hardware shipped consistently across sites.</li>
+        <li><strong>Developed SQL/.NET reporting and quality-gating applications:</strong> Replaced manual reporting with real-time algorithmic views for VP/SVP decisions.</li>
+        <li><strong>Integrated ML outputs into automation decision engines:</strong> Scaled early defect detection across global factories to prevent scrap escapes.</li>
+        <li><strong>Redundant Capacity Requirements for Factory Facilities Equipment resilience &amp; Equipment Telemetry Data performance:</strong> Preempted outages from corporate services deficits; improved Equipment Telemetry Data extraction speeds &gt;10× using dissertation-derived partitioning approaches.</li>
+        <li><strong>Facilities capacity guardrails &amp; prioritization:</strong> Replaced downtime-only repair prioritization with facility impact thresholds; established warning/alert bands and minimum safe capacities (e.g., scrubbed exhaust ≥20 tools) so Corporate Services prioritized work that protected safe, continuous operations.</li>
       </ul>
-      <h3>Prior Roles</h3>
-      <p>Factory Operations Manager, Automation/Software Engineer, Equipment Maintenance Technician — spanning operations management, defect prevention systems, and embedded software development.</p>
-    </div>
 
-    <div class="section" id="education">
-      <h2>Education</h2>
-      <p>Doctorate in Computer Science (Colorado Technical University, 2017)</p>
-      <p>Master of Science in Computer Science (Arizona State University, 2012)</p>
-      <p>Bachelor of Science in Information Technology (University of Phoenix, 2004)</p>
-    </div>
-
-    <div class="section" id="additional">
-      <h2>Additional Experience</h2>
-      <p>Chandler Unified School District – Substitute Teacher</p>
-      <p>United States Air Force – Avionics Systems Specialist (Flight Controls/Instrumentation)</p>
-    </div>
-
-    <div class="section" id="presentations">
-      <h2>Selected Presentations</h2>
+      <p><strong>Prior Roles at Intel (7 Years)</strong></p>
       <ul>
-        <li>Intel Manufacturing Excellence Conference – Product Prioritization Framework</li>
-        <li>Intel Technical Learning Conference – Managing Lot Movement Across Multiple Factories</li>
-        <li>Intel Manufacturing Excellence Conference – Safety Coaching Course</li>
+        <li><strong>Arizona Site Factory Operations Manager:</strong> Directed 30 engineers/technicians, drove output goals, safety, and operational excellence across high-volume manufacturing.</li>
+        <li><strong>Automation/Software Engineer:</strong> Built reporting applications in SQL/.NET that identified global automation issues and improved cycle times. Developed defect prevention systems to enhance quality screening of production material.</li>
+        <li><strong>Equipment Maintenance Technician:</strong> Designed experiments, implemented process improvements, and developed embedded software using C++ to optimize lithography equipment performance and integrate security controls and compliance audits.</li>
       </ul>
-    </div>
+      <span class="back-top"><a href="#top">Back to top ↑</a></span>
+    </section>
 
-    <div class="section" id="skills">
-      <h2>Regulatory & Technical Skills</h2>
-      <p>ISO 9000, eDHR/UDI, CAPA, CSV/validation, Design Controls, SBOM & CVE monitoring, MES/MOM, PLM/ERP, SQL, R, C#, distributed systems, telemetry/observability, Power BI, Oracle, Postgres, SQL Server</p>
-    </div>
+    <section class="section" id="additional">
+      <h2>ADDITIONAL PROFESSIONAL EXPERIENCE</h2>
+      <p>Chandler Unified School District – Substitute Teacher<br />
+      United States Air Force – Avionics Systems Specialist (Flight Controls/Instrumentation)</p>
+      <span class="back-top"><a href="#top">Back to top ↑</a></span>
+    </section>
+
+    <section class="section" id="education">
+      <h2>EDUCATION</h2>
+      <p><strong>Doctorate in Computer Science (D.C.S., doctoral degree, PhD Level) – Colorado Technical University, 2017</strong><br />
+      Dissertation: Partitioning and Compressed Object Persistence in Distributed Analytics Systems</p>
+
+      <p><strong>Master of Science in Computer Science – Arizona State University, 2012</strong><br />
+      Thesis: Abstracting Disparate Data in Distributed Architectures</p>
+
+      <p><strong>Bachelor of Science in Information Technology – University of Phoenix, 2004</strong></p>
+      <span class="back-top"><a href="#top">Back to top ↑</a></span>
+    </section>
+
+    <section class="section" id="presentations">
+      <h2>SELECTED PRESENTATIONS AND PUBLICATIONS</h2>
+      <ul>
+        <li>Intel Manufacturing Excellence Conference: Integrated Factories - Product Prioritization Framework (Prioritization logic and cross site synchronization). (Presentation/White Paper)</li>
+        <li>Intel Technical Learning Conference: (Presentation/White Paper) Managing Lot Movement Across Multiple Factories - Early work on distributed analytics and real time factory decision systems (multi-threaded loaders, control APIs). (Presentation/White Paper)</li>
+        <li>Intel Manufacturing Excellence Conference: Safety Coaching Course (Normalized peer to peer coaching and achieved ~10% reduction in safety recordable incidents). (Demonstration/Exhibit)</li>
+      </ul>
+      <span class="back-top"><a href="#top">Back to top ↑</a></span>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>REGULATORY AND OTHER TECHNICAL SKILLS</h2>
+      <p>ISO 9000, eDHR/UDI, CAPA, CSV/validation, Design Controls, SBOM &amp; CVE monitoring, MES/MOM, PLM/ERP, SQL, R, C#, distributed systems, telemetry/observability, Power BI, Oracle, Postgres, SQL Server</p>
+      <span class="back-top"><a href="#top">Back to top ↑</a></span>
+    </section>
   </main>
 </body>
 </html>
