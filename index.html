@@ -2,216 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Joshua Prickett - Resume</title>
+  <title>Joshua Prickett | Director-Level Engineering & Software Leader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      display: flex;
-      background-color: #fdfdfd;
+      line-height: 1.6;
       color: #333;
-    }
-    nav {
-      width: 220px;
-      background-color: #ffffff;
-      color: #333;
-      min-height: 100vh;
-      padding: 20px;
-      box-sizing: border-box;
-      position: fixed;
-      top: 0;
-      left: 0;
-      border-right: 1px solid #ddd;
-      transition: transform 0.3s ease;
-    }
-    nav h2 {
-      font-size: 1.1em;
-      margin-top: 0;
-      margin-bottom: 15px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-      color: #444;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav ul li {
-      margin-bottom: 12px;
-    }
-    nav ul li a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-    main {
-      margin-left: 240px;
-      padding: 40px;
-      max-width: 900px;
-      width: 100%;
     }
     header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 30px;
     }
-    h1 {
-      margin-bottom: 5px;
+    header h1 {
+      margin: 0;
+    }
+    header p {
+      margin: 5px 0 0;
+    }
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 15px;
+      display: block;
+    }
+    nav a:hover {
+      background: #2c3e50;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 2.5em;
     }
     h2 {
-      margin-top: 30px;
-      color: #444;
-      border-bottom: 2px solid #ccc;
+      color: #2c3e50;
+      border-bottom: 2px solid #eee;
       padding-bottom: 5px;
     }
-    .contact {
-      font-size: 0.95em;
-      color: #555;
-    }
     ul {
-      margin: 5px 0 15px 20px;
+      margin-top: 0.5em;
     }
-    .role {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    .edu {
-      margin-bottom: 10px;
-    }
-    /* Hamburger button */
-    .hamburger {
-      display: none;
-      position: fixed;
-      top: 15px;
-      left: 15px;
-      background: #0073e6;
-      color: #fff;
-      border: none;
-      padding: 10px 15px;
-      font-size: 18px;
-      cursor: pointer;
-      z-index: 1000;
-      border-radius: 4px;
-    }
-    /* Mobile adjustments */
-    @media (max-width: 768px) {
-      nav {
-        transform: translateX(-100%);
-      }
-      nav.active {
-        transform: translateX(0);
-      }
-      main {
-        margin-left: 0;
-        padding: 20px;
-      }
-      .hamburger {
-        display: block;
-      }
+    .contact {
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-
-<button class="hamburger" onclick="toggleMenu()">☰ Menu</button>
-
-<nav id="sidebar">
-  <h2>Navigation</h2>
-  <ul>
-    <li><a href="#summary" onclick="toggleMenu()">Executive Summary</a></li>
-    <li><a href="#competencies" onclick="toggleMenu()">Core Competencies</a></li>
-    <li><a href="#experience" onclick="toggleMenu()">Professional Experience</a></li>
-    <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-  </ul>
-</nav>
-
-<main>
   <header>
-    <h1>JOSHUA PRICKETT</h1>
-    <p>Engineering Leader | Distributed Systems | AI/ML Platforms | Global Team Leadership</p>
+    <h1>Joshua Prickett, D.C.S.</h1>
+    <p><strong>Director-Level Engineering & Software Leader | Cross-Industry Ops | Data & Compliance Systems</strong></p>
     <p class="contact">
       Beaumont, CA | 951-400-2484 | 
-      <a href="mailto:DrJoshuaPrickett@gmail.com">DrJoshuaPrickett@gmail.com</a> | 
-      <a href="https://linkedin.com/in/DR-Joshua-Prickett">linkedin.com/in/DR-Joshua-Prickett</a>
+      <a href="mailto:DrJoshuaPrickett@gmail.com" style="color:#ecf0f1;">DrJoshuaPrickett@gmail.com</a><br>
+      <a href="https://linkedin.com/in/dr-joshua-prickett" style="color:#ecf0f1;">LinkedIn</a> | 
+      <a href="https://github.com/DrJoshuaPrickett" style="color:#ecf0f1;">GitHub</a>
     </p>
   </header>
 
-  <section id="summary">
-    <h2>Executive Summary</h2>
-    <p>
-      Engineering leader with a reputation for turning ambiguity into action and complexity into clarity. 
-      Over a career spanning global distributed systems, AI/ML platforms, and high-stakes operations, 
-      I’ve scaled predictive modeling into 25+ production systems, built self-serve analytics used by hundreds worldwide, 
-      and led global teams with 100% retention. I’ve coached 50+ engineers into leaders, managed portfolios exceeding $40M, 
-      and designed architectures that cut decision latency from minutes to seconds. My focus isn’t maintaining momentum, 
-      it’s creating it—delivering platforms and teams that raise the bar for what’s possible at scale.
-    </p>
-  </section>
+  <nav>
+    <a href="#summary">Summary</a>
+    <a href="#snapshot">Executive Snapshot</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#additional">Additional</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#skills">Skills</a>
+  </nav>
 
-  <section id="competencies">
-    <h2>Core Competencies</h2>
-    <ul>
-      <li><strong>Distributed Systems & Cloud Infrastructure</strong> – High-availability storage, real-time data platforms, Azure, hybrid partitioning</li>
-      <li><strong>AI/ML & Data Science</strong> – Predictive modeling, real-time ML pipelines, anomaly detection, experimentation design</li>
-      <li><strong>Leadership & Strategy</strong> – Executive influence, inclusive team building, product portfolio ownership, roadmap execution</li>
-      <li><strong>DevOps & Architecture</strong> – ETL pipelines, observability frameworks, CI/CD, secure system design</li>
-      <li><strong>Programming & Tools</strong> – R, Python, SQL, C#, Power BI, SSAS, Tableau</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <p class="role">Intel Corporation | 1998 – 2025<br>
-    Principal Engineering Leader, Data Science & Factory Systems</p>
-    <ul>
-      <li>Directed 20+ engineers and managers across software, data science, and DevOps, implementing inclusive leadership and continuous learning rituals that resulted in zero attrition and sustainable team pipelines.</li>
-      <li>Built a global AI/ML talent pipeline, coaching 50+ engineers in SQL, R, C#, distributed systems, and ML deployment.</li>
-      <li>Managed a $40M+ product portfolio, aligning priorities across global factories with business objectives.</li>
-      <li>Influenced VP/SVP leadership by defining modernization strategy and standardizing KPIs across product lines.</li>
-      <li>Architected distributed decision systems reducing product cycle variability by 38% and scaling predictive ML adoption to 25+ models.</li>
-      <li>Designed Virtual Factory architecture cutting lot-tracking latency from 15 minutes/site to under 2 minutes.</li>
-      <li>Developed hybrid storage and partitioning strategy improving data access >10x, influencing next-gen analytics platforms.</li>
-      <li>Influenced executives to re-architect flawed enterprise system, avoiding 5,000+ labor hours.</li>
-      <li>Championed self-serve analytics tools (Power BI, connectors), empowering 200+ analysts and engineers.</li>
-    </ul>
-
-    <p class="role">Prior Roles at Intel</p>
-    <ul>
-      <li>Data Science/Manufacturing Engineering Director – Led cross-factory improvements, integrating ML results into automation engines and defining enterprise data strategy.</li>
-      <li>Arizona Site Factory Operations Manager – Directed 30 engineers/technicians; drove output goals, safety, and operational excellence.</li>
-      <li>Automation/IT Support Engineer – Built SQL/.NET reporting apps to identify global automation issues and improve cycle times.</li>
-      <li>Equipment Maintenance Technician – Designed experiments and developed embedded software to optimize lithography performance.</li>
-    </ul>
-
-    <p class="role">Additional Professional Experience</p>
-    <ul>
-      <li>Chandler Unified School District – Substitute Teacher</li>
-      <li>United States Air Force – Avionic Systems Specialist (Flight Controls/Instrumentation)</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <div class="edu">
-      <strong>Doctorate in Computer Science (D.C.S.)</strong> – Colorado Technical University, 2017<br>
-      Dissertation: Partitioning and Compressed Object Persistence in Distributed Analytics Systems
+  <main>
+    <div class="section" id="summary">
+      <h2>Executive Summary</h2>
+      <p>Director and systems architect for instrument software. I’ve built and led multiple teams across the US and EU to deliver embedded and application-layer software for diagnostic platforms... Results include decision loops cut to &lt;2 minutes across global sites, queues reduced up to 25%, and $10M+ in supplier savings via contract renegotiations. I’m excited to bring this operating model to Abbott’s Infectious Diseases business and raise quality, speed, and confidence in every next-gen instrument we put in the field.</p>
     </div>
-    <div class="edu">
-      <strong>Master of Science in Computer Science</strong> – Arizona State University, 2012<br>
-      Thesis: Abstracting Disparate Data in Distributed Architectures
-    </div>
-    <div class="edu">
-      <strong>Bachelor of Science in Information Technology</strong> – University of Phoenix, 2004
-    </div>
-  </section>
-</main>
 
-<script>
-  function toggleMenu() {
-    document.getElementById("sidebar").classList.toggle("active");
-  }
-</script>
+    <div class="section" id="snapshot">
+      <h2>Executive Snapshot</h2>
+      <ul>
+        <li><strong>$10M+ supplier wins:</strong> Introduced part-level scrap genealogy tied to supplier defects...</li>
+        <li><strong>Portfolio Shaping & Demand Management:</strong> Centralized intake across global users...</li>
+        <li><strong>Program Leadership & Strategy:</strong> Directed a $40M+ multi-site AI/ML portfolio...</li>
+        <li><strong>Accounting integrity & MES remediation:</strong> Closed $500M+ loss accounting gap...</li>
+        <li><strong>Global control & telemetry:</strong> Cut global lot status lookups from 10–15 minutes to &lt;2 minutes...</li>
+        <li><strong>Predictive stability & early detection:</strong> Reduced cycle time variability by ~38%...</li>
+        <li><strong>Cross-Functional Alignment:</strong> Partnered with engineers, researchers, PMs...</li>
+        <li><strong>Mentorship & Talent Development:</strong> Managed managers and mentored 50+ engineers...</li>
+      </ul>
+    </div>
 
+    <div class="section" id="achievements">
+      <h2>Signature Achievements</h2>
+      <ul>
+        <li><strong>Supplier accountability:</strong> Turned vendor specs into enforceable contracts... $10M+ savings.</li>
+        <li><strong>Product Prioritization Framework:</strong> Built cross-site model aggregator... called “the biggest transformation in prioritization logic in the last two decades.”</li>
+        <li><strong>Predictive quality at scale:</strong> Operationalized 50+ ML systems with audit-ready persistence...</li>
+        <li><strong>Global architecture & hardware requirements:</strong> Led reference architectures across sites.</li>
+        <li><strong>VF-wide standards & adoption:</strong> Line Yield metrics, reusable analytics, upskilled 200+ analysts.</li>
+      </ul>
+    </div>
+
+    <div class="section" id="experience">
+      <h2>Professional Experience</h2>
+      <h3>Intel Corporation | 1998 – 2025 | Global</h3>
+      <p><em>Director-level and senior roles across Data Science, Manufacturing Engineering, R&D DSS.</em></p>
+      <ul>
+        <li><strong>Agentic AI with guardrails:</strong> Designed prioritization logic with explainable UI and CAPA mapping.</li>
+        <li><strong>Virtual Factory orchestration:</strong> Reduced cross-site latency to &lt;2 minutes.</li>
+        <li><strong>Executive communication:</strong> Shaped portfolio funding for $40M+ program set.</li>
+        <li><strong>Architecture governance:</strong> Defined reference architectures and baselines.</li>
+        <li><strong>SQL/.NET reporting:</strong> Delivered real-time algorithmic views for executives.</li>
+      </ul>
+      <h3>Prior Roles</h3>
+      <p>Factory Operations Manager, Automation/Software Engineer, Equipment Maintenance Technician — spanning operations management, defect prevention systems, and embedded software development.</p>
+    </div>
+
+    <div class="section" id="education">
+      <h2>Education</h2>
+      <p>Doctorate in Computer Science (Colorado Technical University, 2017)</p>
+      <p>Master of Science in Computer Science (Arizona State University, 2012)</p>
+      <p>Bachelor of Science in Information Technology (University of Phoenix, 2004)</p>
+    </div>
+
+    <div class="section" id="additional">
+      <h2>Additional Experience</h2>
+      <p>Chandler Unified School District – Substitute Teacher</p>
+      <p>United States Air Force – Avionics Systems Specialist (Flight Controls/Instrumentation)</p>
+    </div>
+
+    <div class="section" id="presentations">
+      <h2>Selected Presentations</h2>
+      <ul>
+        <li>Intel Manufacturing Excellence Conference – Product Prioritization Framework</li>
+        <li>Intel Technical Learning Conference – Managing Lot Movement Across Multiple Factories</li>
+        <li>Intel Manufacturing Excellence Conference – Safety Coaching Course</li>
+      </ul>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>Regulatory & Technical Skills</h2>
+      <p>ISO 9000, eDHR/UDI, CAPA, CSV/validation, Design Controls, SBOM & CVE monitoring, MES/MOM, PLM/ERP, SQL, R, C#, distributed systems, telemetry/observability, Power BI, Oracle, Postgres, SQL Server</p>
+    </div>
+  </main>
 </body>
 </html>
